@@ -1,9 +1,7 @@
 # Anchor Boxes
----
 Anchor box are predefined bounding boxes of different sizes and aspect ratio used in object detection model like YOLO and SSD. They allow the model to detect object of varying shapes and scales by predicting offsets relative to these anchors.
 
 # 🔍why Anchor Box
----
 Instead of predicting bounding box from scratch, models predict:
 - Whether an object exists at a specific anchor.
 - The offset of actual bounding box from the anchor box
@@ -13,7 +11,6 @@ This helps:
 - Handle different aspect ratios and scales efficiently.
 
 # 🆚Anchor Box VS Region Proposals
----
 Anchor Boxes can be seen as a replacement for the " region proposals " used in older object detection method like R-CNN.
 
 - Traditional methods (R-CNN, Fast R-CNN) first generate region proposals using external algorithms (e.g., Selective Search).
@@ -26,7 +23,6 @@ This approach simplifies and speeds up detection by eliminating the need for a s
 
 # ⛔Non-Maximum Suppression (NMS)
 
----
 
 Non-Maximum Suppression (NMS) is a key post-processing step in object detection tasks. It helps eliminate redundant bounding boxes by keeping only the most confident ones and removing others that overlap too much.
 
